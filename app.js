@@ -5,6 +5,7 @@ const fs = require('fs')
 const bodyParser = require('body-parser')
 const path = require('path');
 
+
 app.use(cors())
 app.use(bodyParser.json())
 
@@ -31,6 +32,6 @@ app.get('/get-page/:name', function(req,res){
     //__dirname : It will resolve to your project folder.
 });
 
-app.listen(3000, ()=> {
+app.listen(process.env.PORT || 3000, ()=> {
     console.log(`server is running on http://127.0.0.1:3000`);
 })
