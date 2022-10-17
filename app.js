@@ -31,6 +31,6 @@ app.get('/get-page/:name', function(req,res){
     //__dirname : It will resolve to your project folder.
 });
 
-app.listen(8000, ()=> {
-    console.log(`server is running on http://127.0.0.1:8000`);
+app.listen(3000, ()=> {
+    console.log(`server is running on http://127.0.0.1:3000`);
 })
